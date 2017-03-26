@@ -23,8 +23,8 @@ server.listen(port);
 
 //Azure
 var azure = require('azure');
-var hubname = 'test';
-var connectionString = 'Endpoint=sb://eifjeifjeifjeifje.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=2Cz6XDeAzkg2iJT1D2XDsu/I7GJ9LXorMhlAtFN6G4w=';
+var hubname = "test";
+var connectionString = "Endpoint=sb://eifjeifjeifjeifje.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=2Cz6XDeAzkg2iJT1D2XDsu/I7GJ9LXorMhlAtFN6G4w=";
 var notificationHubService = azure.createNotificationHubService(hubName,connectionString);
 
 var io = require('socket.io').listen(server);
